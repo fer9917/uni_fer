@@ -1,0 +1,27 @@
+<br>
+<h3>Agregar alumno</h3><br>
+<form onsubmit="event.preventDefault(); students.save({form: 'form_student'})" id="form_student">
+    <div class="row">
+        <div class="col-xs-12 col-md-6">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" class="form-control" id="name" placeholder="Juan" required="1">
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <div class="form-group">
+                <label for="last_name">Apellidos:</label>
+                <input type="text" class="form-control" id="last_name" placeholder="Perez Lopez" required="1">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-6">
+            <div class="form-group">
+                <label for="date">Fecha de nacimiento:</label>
+                <input type="date" class="form-control" id="date" max="2014-01-01" required="1">
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> Guardar</button>
+</form>

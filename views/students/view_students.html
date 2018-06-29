@@ -1,0 +1,27 @@
+<br>
+<h3>Buscar alumnos</h3><br>
+<div class="input-group">
+    <input 
+        id="text_student"
+        type="text" 
+        class="form-control" 
+        placeholder="Código, nombre, apellido o fecha de alumno">
+    <div class="input-group-append">
+        <button 
+            class="btn btn-outline-primary" 
+            type="button"
+            onclick="students.list_students({
+                text: $('#text_student').val(),
+                div: 'div_students'
+            })">
+            <i class=" fa fa-search"></i>
+             Buscar
+        </button>
+    </div>
+</div>
+<small class="form-text text-muted">Si el campo esta vació busca todos.</small><br>
+<div class="row">
+    <div class="col-xs-12" id="div_students">
+
+    </div>
+</div>

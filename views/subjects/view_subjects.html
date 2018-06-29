@@ -1,0 +1,27 @@
+<br>
+<h3>Buscar materias</h3><br>
+<div class="input-group">
+    <input 
+        id="text_subject"
+        type="text" 
+        class="form-control" 
+        placeholder="Código o nombre de la materia">
+    <div class="input-group-append">
+        <button 
+            class="btn btn-outline-primary" 
+            type="button"
+            onclick="subjects.list_subjects({
+                text: $('#text_subject').val(),
+                div: 'div_subjects'
+            })">
+            <i class=" fa fa-search"></i>
+             Buscar
+        </button>
+    </div>
+</div>
+<small class="form-text text-muted">Si el campo esta vació busca todas.</small><br>
+<div class="row">
+    <div class="col-xs-12" id="div_subjects">
+
+    </div>
+</div>
